@@ -91,10 +91,12 @@
       <property name="src.data.dir" location="/micklem/data/human/clinvar/current" />
       <property name="src.data.includes" value="variant_summary.txt" />
     </source>
+<!--
     <source name="pdb" type="pdb">
       <property name="src.data.dir" location="/micklem/data/pdb"/>
       <property name="pdb.organisms" value="9606"/>
     </source>
+-->
     <source name="psi-intact" type="psi">
       <property name="src.data.dir" location="/micklem/data/psi/intact/current" />
       <property name="intact.organisms" value="9606" />
