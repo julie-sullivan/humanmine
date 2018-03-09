@@ -14,9 +14,8 @@ sourceSets {
 }
 
 configurations {
-    providedRuntime
+    onlyRunTime
 }
-
 
 dependencies {
     compile (project(":dbmodel")) {transitive = false}
@@ -24,7 +23,7 @@ dependencies {
     compile group: "org.intermine", name: "intermine-api", version: imVersion
     compile group: "org.intermine", name: "intermine-webapp", version: imVersion, classifier: "classes"
     compile group: "org.intermine", name: "intermine-webtasks", version: imVersion
-    providedRuntime group: 'org.intermine', name: 'bluegenes', version: '0.9.3-SNAPSHOT'
+    onlyRunTime group: 'org.intermine', name: 'bluegenes', version: '0.9.3-SNAPSHOT'
 }
 
 def explodedWebAppDir = "$buildDir/explodedWebApp"
@@ -68,19 +67,11 @@ gretty {
 
 task blueGenesStart(type: JavaExec) {
 
-    def baseURL = props.getProperty("webapp.baseurl")
-    def path = props.getProperty("webapp.path")
-    def serviceRoot = baseURL + "/" + path
-    def projectTitle = props.getProperty("project.title")
-
-    System.out.println("loading '" + projectTitle + "' at '" + serviceRoot + "'")
-
-
-    classpath = configurations.providedRuntime
-    main = "bluegenes.core"
-    //:bluegenes-default-service-root "http://beta.flymine.org/beta"
-    environment("bluegenes-default-service-root", serviceRoot)
-    // FlyMine Beta
-    environment("bluegenes-default-mine-name", projectTitle)
+        classpath = configurations.onlyRunTime
+        main = "bluegenes.core"
+        //:bluegenes-default-service-root "http://beta.flymine.org/beta"
+        environment("bluegenes-default-service-root", props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path"))
+        // FlyMine Beta
+        environment("bluegenes-default-mine-name", props.getProperty("project.title"))
 
 }
