@@ -29,14 +29,7 @@ dependencies {
 def explodedWebAppDir = "$buildDir/explodedWebApp"
 def mergePropsDir = "$buildDir/props"
 
-webappConfig {
-    mineName = "humanmine"
-    objectStoreName = "os.production"
-    userProfileObjectStoreName = "os.userprofile-production"
-    userProfileObjectStoreWriterName = "osw.userprofile-production"
-    defaultInterminePropertiesFile = "default.intermine.production.properties"
-    propsDir = "$mergePropsDir"
-}
+
 
 war {
     dependsOn 'mergeProperties', 'summariseObjectStore', 'unwarBioWebApp', 'addStrutsConfig'
@@ -60,18 +53,26 @@ task copyWebappContent(type: Copy) {
 def props = new Properties()
 file(minePropertyFile).withInputStream { props.load(it) }
 
+
 gretty {
     jvmArgs = ['-Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true']
     contextPath = props.getProperty("webapp.path")
 }
 
+webappConfig {
+    mineName = "humanmine"
+    objectStoreName = "os.production"
+    userProfileObjectStoreName = "os.userprofile-production"
+    userProfileObjectStoreWriterName = "osw.userprofile-production"
+    defaultInterminePropertiesFile = "default.intermine.production.properties"
+    propsDir = "$mergePropsDir"
+}
+
 task blueGenesStart(type: JavaExec) {
-
-        classpath = configurations.onlyRunTime
-        main = "bluegenes.core"
-        //:bluegenes-default-service-root "http://beta.flymine.org/beta"
-        environment("bluegenes-default-service-root", props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path"))
-        // FlyMine Beta
-        environment("bluegenes-default-mine-name", props.getProperty("project.title"))
-
+    classpath = configurations.onlyRunTime
+    main = "bluegenes.core"
+    //:bluegenes-default-service-root "http://beta.flymine.org/beta"
+    environment("bluegenes-default-service-root", props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path"))
+    // FlyMine Beta
+    environment("bluegenes-default-mine-name", props.getProperty("project.title"))
 }
