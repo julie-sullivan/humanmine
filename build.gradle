@@ -1,7 +1,10 @@
 buildscript {
     repositories {
         mavenLocal()
-        mavenCentral()
+        jcenter()
+        maven {
+            url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+        }
     }
     dependencies {
         classpath group: 'org.intermine', name: 'plugin', version: '1.+'
@@ -28,7 +31,10 @@ subprojects {
   
   repositories {
     mavenLocal()
-    mavenCentral()
+    jcenter()
+    maven {
+        url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+    }
     maven {
       url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
     }
