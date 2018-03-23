@@ -7,7 +7,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath group: 'org.intermine', name: 'plugin', version: imVersion
+        classpath group: 'org.intermine', name: 'plugin', version: System.getProperty("imVersion")
     }
 }
 
@@ -17,7 +17,6 @@ ext {
   minePropertyFileName = "${mineName}.properties$mineRelease"
   minePropertyFile = "${System.env.HOME}/.intermine/$minePropertyFileName"
   println "Using properties file: '$minePropertyFile' "
-
 }
 
 subprojects {
