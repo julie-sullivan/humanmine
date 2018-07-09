@@ -173,6 +173,10 @@
       <property name="src.data.dir" location="/micklem/data/human/GTEx/current" />
     </source>
 
+    <source name="humanmine-static" type="humanmine-static">
+      <property name="src.data.file" location="/micklem/data/humanmine/datasets/current/datasets.xml"/>
+    </source>
+
     <source name="update-publications" type="update-publications">
       <property name="src.data.file" location="publications.xml" />
       <property name="loadFullRecord" value="true"/>
