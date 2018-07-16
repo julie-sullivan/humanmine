@@ -73,7 +73,7 @@
 
   <class className="org.intermine.model.bio.Disease">
     <fields>
-      <fieldconfig fieldExpr="identifier"/>
+      <fieldconfig fieldExpr="primaryIdentifier"/>
       <fieldconfig fieldExpr="name"/>
     </fields>
   </class>
@@ -264,7 +264,6 @@
       <fieldconfig fieldExpr="tissue.name"/>
       <fieldconfig fieldExpr="level"/>
       <fieldconfig fieldExpr="reliability"/>
-      <fieldconfig fieldExpr="expressionType"/>
       <fieldconfig fieldExpr="cellType"/>
     </fields>
   </class>
@@ -278,16 +277,6 @@
       <fieldconfig fieldExpr="type"/>
     </fields>
   </class>
-
-  <class className="org.intermine.model.bio.ProteinStructure">
-    <fields>
-      <fieldconfig fieldExpr="identifier"/>
-      <fieldconfig fieldExpr="title"/>
-      <fieldconfig fieldExpr="technique"/>
-      <fieldconfig fieldExpr="resolution"/>
-    </fields>
-  </class>
-
 
   <class className="org.intermine.model.bio.Publication">
       <headerconfig>
@@ -316,13 +305,6 @@
   </class>
 
   <class className="org.intermine.model.bio.SNP">
-    <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" showInListAnalysisPreviewTable="true"/>
-      <fieldconfig fieldExpr="organism.name"/>
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.SNV">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" showInListAnalysisPreviewTable="true"/>
       <fieldconfig fieldExpr="organism.name"/>
