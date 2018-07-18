@@ -75,6 +75,9 @@
     <source name="interpro" type="interpro">
       <property name="src.data.dir" location="/micklem/data/interpro/current" />
     </source>
+    <source name="interpro-go" type="interpro-go">
+      <property name="src.data.dir" location="/micklem/data/interpro/ontology/current"/>
+    </source>
     <source name="psi-mi-ontology" type="psi-mi-ontology">
       <property name="src.data.file" location="/micklem/data/psi/ontology/current/psi-mi.obo" />
     </source>
@@ -132,7 +135,7 @@
       <property name="fasta.loaderClassName"
                 value="org.intermine.bio.dataconversion.NCBIFastaLoaderTask"/>
       <property name="fasta.taxonId" value="9606"/>
-      <property name="fasta.dataSetTitle" value="NCBI fasta data set for Homo sapiens"/>
+      <property name="fasta.dataSetTitle" value="Homo sapiens genome annotation, released 26th March 2018"/>
       <property name="fasta.dataSourceName" value="NCBI"/>
       <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
       <property name="fasta.classAttribute" value="primaryIdentifier"/>
@@ -144,7 +147,7 @@
       <property name="gff3.taxonId" value="9606"/>
       <property name="gff3.seqClsName" value="Chromosome"/>
       <property name="gff3.dataSourceName" value="NCBI"/>
-      <property name="gff3.dataSetTitle" value="NCBI gff3 data set"/>
+      <property name="gff3.dataSetTitle" value="Release GRCh38 of the Homo sapiens genome sequence"/>
       <property name="src.data.dir" location="/micklem/data/human/gff/current"/>
     </source>
 
