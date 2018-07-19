@@ -26,7 +26,6 @@
                   <th>Data</th>
                   <th>Source</th>
                   <th>Version</th>
-                  <th>PubMed</th>
                   
   </tr>
        
@@ -38,7 +37,7 @@
                <td>July 2018</td>
        </tr>
        <tr>
-               <td>Human, Mouse, Rat<td>
+               <td>Human, Mouse, Rat</td>
                <td>Gene names and symbol</td>
                <td><a href="http://www.genenames.org/">HGNC</a>, <a href="http://www.ncbi.nlm.nih.gov/gene/">NCBI</a>, <a href="http://www.informatics.jax.org/">MGI</a>, <a href="http://rgd.mcw.edu/">RGD</a></td>
                <td>Human, Mouse, Rat</td>
@@ -64,7 +63,7 @@
 
 
        <tr>
-               <td rowspan="2"  class="leftcol"><p><h2>Gene ontology</h2></p></td>  
+               <td rowspan="1"  class="leftcol"><p><h2>Gene ontology</h2></p></td>  
                <td>Human, Mouse</td>
                <td>Gene ontology annotations</td>     
                <td><a href="http://www.uniprot.org/">UniProt</a>, <a href="http://www.informatics.jax.org/">MGI</a>, <a href="http://www.geneontology.org/">GO Consortium</a></td>
@@ -82,7 +81,6 @@
                <td>July 2018, v65</td>
        </tr>
        <tr>
-               <td>Pathways</td>
                <td>Human, Mouse</td>
                <td>Gene-pathway annotations from Kegg</td>
                <td><a href="http://www.genome.jp/kegg/pathway.html">KEGG</a></td>
@@ -146,7 +144,6 @@
                <td>July 2018</td>
        </tr>
        <tr>
-               <td>Alleles</td>
                <td>Mouse</td>
                <td>Mouse alleles from MGI</td>
                <td><a href="http://www.informatics.jax.org/">MGI</a></td>
@@ -168,14 +165,15 @@
 
 
        <tr>
-               <td rowspan="1"  class="leftcol"><p><h2>Orthologues</h2></p></td>  
+               <td>rowspan="1"  class="leftcol"><p><h2>Orthologues</h2></p></td>  
                <td>Human, Mouse, Rat, Drosophila, C. elegans, S.cerevisiae</td>
                <td>Orthologue and paralogue predictions between these organisms</td>
                <td><a href="http://www.pantherdb.org/>Panther</a></td>
                <td>July 2018, v13.1</td>
        </tr>
+                      
         <tr>
-               <td rowspan="1"  class="leftcol"><p><h2>Publications</h2></p></td>  
+               <td>rowspan="1"  class="leftcol"><p><h2>Publications</h2></p></td>  
                <td>Human, Mouse</td>
                <td>Gene to PubMed ID mappings</td>       
                <td><a href="ftp://ftp.ncbi.nih.gov/gene/DATA/">NCBI PubMed</a></td>
