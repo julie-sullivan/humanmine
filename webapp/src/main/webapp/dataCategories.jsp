@@ -40,7 +40,6 @@
                <td>Human, Mouse, Rat</td>
                <td>Gene names and symbol</td>
                <td><a href="http://www.genenames.org/">HGNC</a>, <a href="http://www.ncbi.nlm.nih.gov/gene/">NCBI</a>, <a href="http://www.informatics.jax.org/">MGI</a>, <a href="http://rgd.mcw.edu/">RGD</a></td>
-               <td>Human, Mouse, Rat</td>
                <td>July 2018</td>
        </tr>
 
@@ -152,14 +151,14 @@
        <tr>
                <td>Human</td>
                <td>Clinically significant sequence variants</td>
-               <td><a href="http://www.human-phenotype-ontology.org/">ClinVar</a></td>
+               <td><a href="https://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a></td>
                <td>July 2018</td>
        </tr>
 
               <tr>
                <td>Human</td>      
                <td>Genome wide association studies</td>
-               <td><a href="http://www.hugenavigator.org/HuGENavigator/gWAHitStartPage.do">HuGE navigator (including GWAS catalog)</a></td>
+               <td><a href="https://www.ebi.ac.uk/gwas/">GWAS catalog (including HuGE navigator)</a></td>
                <td>December 2014</td>
        </tr>
 
