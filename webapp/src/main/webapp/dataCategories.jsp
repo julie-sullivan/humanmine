@@ -164,7 +164,7 @@
 
 
        <tr>
-               <td class="leftcol"><p><h2>Orthologues</h2></p></td>
+               <td rowspan="1" class="leftcol"><p><h2>Orthologues</h2></p></td>
                <td>Human, Mouse, Rat, Drosophila, C. elegans, S.cerevisiae</td>
                <td>Orthologue and paralogue predictions between these organisms</td>
                <td><a href="http://www.pantherdb.org">Panther</a></td>
@@ -172,7 +172,7 @@
        </tr>
                       
         <tr>
-               <td class="leftcol"><p><h2>Publications</h2></p></td>
+               <td rowspan="1" class="leftcol"><p><h2>Publications</h2></p></td>
                <td>Human, Mouse</td>
                <td>Gene to PubMed ID mappings</td>       
                <td><a href="ftp://ftp.ncbi.nih.gov/gene/DATA/">NCBI PubMed</a></td>
