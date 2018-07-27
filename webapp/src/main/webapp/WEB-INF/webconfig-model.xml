@@ -440,13 +440,13 @@
                      placement="Homology"
                      parameters="{'dataSets': ['Panther data set']}"
                      types="Gene"/>
-
+<!-- FIXME
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.ProteinAtlasDisplayer"
                      jspName="model/proteinAtlasDisplayer.jsp"
                      replacesFields="proteinAtlasExpression"
                      placement="summary"
                      types="Gene"/>
-
+-->
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneExpressionAtlasTissuesDisplayer"
                      jspName="model/geneExpressionAtlasTissuesDisplayer.jsp"
                      replacesFields="atlasExpression"
