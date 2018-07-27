@@ -167,7 +167,7 @@
                <td class="leftcol"><p><h2>Orthologues</h2></p></td>
                <td>Human, Mouse, Rat, Drosophila, C. elegans, S.cerevisiae</td>
                <td>Orthologue and paralogue predictions between these organisms</td>
-               <td><a href="http://www.pantherdb.org/>Panther</a></td>
+               <td><a href="http://www.pantherdb.org">Panther</a></td>
                <td>July 2018, v13.1</td>
        </tr>
                       
