@@ -21,30 +21,33 @@ ext {
 }
 
 subprojects {
-  apply plugin: 'java'
-  apply plugin: 'maven'
+    apply plugin: 'java'
+    apply plugin: 'maven'
 
-  sourceCompatibility = 1.8
-  targetCompatibility = 1.8
-  
-  repositories {
-    mavenLocal()
-    jcenter()
-    maven {
-        url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
-    }
-    maven {
-      url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
-    }
-    maven { url 'https://clojars.org/repo' }
-    maven {
-        url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
-    }
-  }
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
 
-  test {
-    ignoreFailures = true
-  }
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven{
+            url "https://dl.bintray.com/intermineorg/intermine/"
+        }
+        maven{
+            url "https://dl.bintray.com/intermineorg/bio/"
+        }
+        maven {
+            url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+        }
+        maven {
+            url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
+        }
+        maven { url 'https://clojars.org/repo' }
+    }
+
+    test {
+        ignoreFailures = true
+    }
 
   dependencies {
     compile group: 'ant', name: 'ant', version: '1.6.5'
