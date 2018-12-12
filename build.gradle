@@ -1,3 +1,5 @@
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Copy
+
 buildscript {
     repositories {
         mavenLocal()
@@ -49,13 +51,13 @@ subprojects {
         ignoreFailures = true
     }
 
-  dependencies {
-    compile group: 'ant', name: 'ant', version: '1.6.5'
-    compile group: 'log4j', name: 'log4j', version: '1.2.17'
-    testCompile group: 'junit', name: 'junit', version: '4.8.2'
-  }
+    dependencies {
+        compile group: "org.intermine", name: "intermine-resources", version: System.getProperty("imVersion")
+        compile('ant:ant:1.6.5')
+        testCompile group: 'junit', name: 'junit', version: '4.8.2'
+    }
 
-  task copyMineProperties(type: Copy) {
+    task copyMineProperties(type: Copy) {
     description "Copies mine specific intermine.properties file (from .intermine directory) into resources output to be included in the war"
     dependsOn 'processResources'
     from (minePropertyFile)
