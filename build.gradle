@@ -30,12 +30,6 @@ subprojects {
     repositories {
         mavenLocal()
         jcenter()
-        maven{
-            url "https://dl.bintray.com/intermineorg/intermine/"
-        }
-        maven{
-            url "https://dl.bintray.com/intermineorg/bio/"
-        }
         maven {
             url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
         }
