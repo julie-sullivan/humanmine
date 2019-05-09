@@ -34,13 +34,13 @@
                <td>Human</td>
                <td>Human genome sequence and annotation</td>
                <td><a href="http://www.ncbi.nlm.nih.gov">NCBI</a></td>
-               <td>July 2018</td>
+               <td>May 2019</td>
        </tr>
        <tr>
                <td>Human, Mouse, Rat</td>
                <td>Gene names and symbol</td>
                <td><a href="http://www.genenames.org/">HGNC</a>, <a href="http://www.ncbi.nlm.nih.gov/gene/">NCBI</a>, <a href="http://www.informatics.jax.org/">MGI</a>, <a href="http://rgd.mcw.edu/">RGD</a></td>
-               <td>July 2018</td>
+               <td>May 2019</td>
        </tr>
 
 
@@ -51,13 +51,13 @@
                <td>Human, Mouse</td>
                <td>Protein sequence and annotation</a></td>
                <td><a href="http://www.uniprot.org/">UniProt</a></td>
-               <td>2018_06</td>
+               <td>Release 2019_02</td>
        </tr>
        <tr>
                <td>Human, Mouse</td>
                <td>Protein domains</td>
                <td><a href="http://www.ebi.ac.uk/interpro/">InterPro</a></td>
-               <td>July 2018</td>
+               <td>April 2019</td>
        </tr>
 
 
@@ -66,7 +66,7 @@
                <td>Human, Mouse</td>
                <td>Gene ontology annotations</td>     
                <td><a href="http://www.uniprot.org/">UniProt</a>, <a href="http://www.informatics.jax.org/">MGI</a>, <a href="http://www.geneontology.org/">GO Consortium</a></td>
-               <td>July 2018</td>
+               <td>April 2019</td>
        </tr>
 
 
@@ -77,7 +77,7 @@
                <td>Human, Mouse</td>
                <td>Gene-pathway annotations from Reactome</td>
                <td><a href="http://www.reactome.org/">Reactome</a></td>
-               <td>July 2018, v65</td>
+               <td>April 2019, v68</td>
        </tr>
        <tr>
                <td>Human, Mouse</td>
@@ -87,7 +87,7 @@
        </tr>
        <tr>
               
-              <td rowspan="4" class="leftcol"><p><h2>Expression</h2></p></td>
+              <td rowspan="5" class="leftcol"><p><h2>Expression</h2></p></td>
                <td>Human</td>
                <td>Protein localisation</td>
                <td><a href="http://www.proteinatlas.org/">Human Protein Atlas (HPA)</a></td>
@@ -95,6 +95,12 @@
        </tr>
        <tr>
                
+               <td>Human</td>
+               <td>RNA-seq across human tissues</td>
+               <td><a href="http://www.proteinatlas.org/">Human Protein Atlas (HPA)</a></td>
+               <td>April 2019, v18</td>
+       </tr>
+       <tr>
               
               <td>Human</td>
               <td>Human gene expression atlas of 5372 samples representing 369 different cell and tissue types, disease states and cell lines</td> 
@@ -120,13 +126,13 @@
                <td>Human, Mouse</td>
                <td>Physical interaction data</td>
                <td><a href="http://www.ebi.ac.uk/intact/">IntAct</a></td>
-               <td>July 2018</td>
+               <td>March 2019</td>
        </tr>
        <tr>
                <td>Human, Mouse</td>
                <td>Genetic and physical interaction data</td>
                <td><a href="http://thebiogrid.org/">BioGRID</a></td>
-               <td>Release 3.4.162</td>
+               <td>Version 3.5.169</td>
        </tr>
 
        <tr>
@@ -134,25 +140,25 @@
                <td>Human</td>
                <td>Gene-disease associations from Online Mendelian Inheritance in Man (OMIM)</td>
                <td><a href="http://www.omim.org/">OMIM</a></td>
-               <td>July 2017</td>
+               <td>April 2019</td>
        </tr>
        <tr>
                <td>Human</td>
                <td>Gene-Phenotype annotations</td>
                <td><a href="http://www.human-phenotype-ontology.org/">HPO</a></td>
-               <td>July 2018</td>
+               <td>April 2019</td>
        </tr>
        <tr>
                <td>Mouse</td>
                <td>Mouse alleles from MGI</td>
                <td><a href="http://www.informatics.jax.org/">MGI</a></td>
-               <td>July 2018</td>
+               <td>April 2019</td>
        </tr>
        <tr>
                <td>Human</td>
                <td>Clinically significant sequence variants</td>
                <td><a href="https://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a></td>
-               <td>July 2018</td>
+               <td>April 2019</td>
        </tr>
 
               <tr>
