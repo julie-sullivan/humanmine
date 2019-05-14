@@ -164,8 +164,8 @@
               <tr>
                <td>Human</td>      
                <td>Genome wide association studies</td>
-               <td><a href="https://www.ebi.ac.uk/gwas/">GWAS catalog (including HuGE navigator)</a></td>
-               <td>December 2014</td>
+               <td><a href="https://www.ebi.ac.uk/gwas/">GWAS catalog</a></td>
+               <td>April 2019, V1.0</td>
        </tr>
 
 
@@ -174,7 +174,7 @@
                <td>Human, Mouse, Rat, Drosophila, C. elegans, S.cerevisiae</td>
                <td>Orthologue and paralogue predictions between these organisms</td>
                <td><a href="http://www.pantherdb.org">Panther</a></td>
-               <td>July 2018, v13.1</td>
+               <td>April 2019, v14.1</td>
        </tr>
                       
         <tr>
@@ -182,7 +182,7 @@
                <td>Human, Mouse</td>
                <td>Gene to PubMed ID mappings</td>       
                <td><a href="ftp://ftp.ncbi.nih.gov/gene/DATA/">NCBI PubMed</a></td>
-               <td>July 2018</td>
+               <td>April 2019</td>
        </tr>
       
       
