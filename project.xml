@@ -16,6 +16,10 @@
     <source name="ncbi-summaries" type="ncbi-summaries" version="4.0.0">
       <property name="src.data.dir" location="/micklem/data/ncbi/gene-summaries/current/" />
     </source>
+    <source name="allen-brain-expression" type="allen-brain-expression">
+      <property name="src.data.dir" location="/micklem/data/human/Allenbrain" />
+    </source>   
+
     <source name="mgi-identifiers" type="mgi-identifiers">
       <property name="src.data.dir" location="/micklem/data/mgi-identifiers/current" />
     </source>
