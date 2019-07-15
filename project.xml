@@ -7,7 +7,7 @@
 
   <sources>
     <source name="ncbi-gene" type="ncbi-gene">
-      <property name="src.data.dir" location="/tmp/data/ncbi" />
+      <property name="src.data.dir" location="/micklem/data/ncbi" />
       <property name="organisms" value="9606" />
     </source>
   </sources>
